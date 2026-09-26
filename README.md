@@ -4,8 +4,7 @@ A modern and responsive workout library built with Next.js, TypeScript, and Tail
 
 ## 🚀 Live Project
 
-Add your deployed project link here.
-
+https://workout-three-navy.vercel.app/
 ## 📌 Project Overview
 
 FitLog is a workout management web application where users can browse a collection of exercises, check workout details, create their own daily workout plan, and save exercises for later.
