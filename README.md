@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# FITLOG
 
-## Getting Started
+A modern and responsive workout library built with Next.js, TypeScript, and Tailwind CSS. FitLog helps users explore workouts, view detailed exercise information, create a daily workout plan, and save workouts for later.
 
-First, run the development server:
+## 🚀 Live Project
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Add your deployed project link here.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📌 Project Overview
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+FitLog is a workout management web application where users can browse a collection of exercises, check workout details, create their own daily workout plan, and save exercises for later.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The application fetches workout data from an external API and provides a responsive experience across mobile, tablet, and desktop devices.
 
-## Learn More
+## 🛠️ Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+- DaisyUI
+- React Hot Toast
+- Lucide React
+- REST API
+- LocalStorage
+- Next.js App Router
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ✨ Key Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 1. Workout Library
+Browse all available workouts in a responsive grid layout with workout images, muscle groups, equipment, duration, calories, and ratings.
 
-## Deploy on Vercel
+### 2. Workout Details
+View detailed information about each workout including description, equipment, duration, calories, rating, and step-by-step instructions.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 3. Today's Workout Plan
+Add workouts to your daily plan and manage them from the My Plan page.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 4. Save Workouts
+Save workouts for later and access them from the Saved section.
+
+### 5. Workout Sorting
+Sort workouts by:
+- Duration
+- Calories
+- Rating
+
+### 6. Mark Workout as Done
+Mark workouts as completed with visual feedback and toast notifications.
+
+### 7. Persistent Data
+Workout plans, saved workouts, and completed workouts are stored using LocalStorage.
+
+### 8. Responsive Design
+The application is designed to work smoothly across:
+- Mobile
+- Tablet
+- Desktop
+
+### 9. Toast Notifications
+Users receive instant feedback when adding, saving, removing, or completing workouts.
+
+### 10. Custom 404 Page
+A custom not-found page is displayed for invalid routes and unavailable workouts.
+
+## 📂 Project Structure
+
+```text
+workout/
+├── public/
+│   ├── banner.png
+│   └── logo.png
+│
+├── src/
+│   ├── app/
+│   │   ├── workout/
+│   │   │   └── [id]/
+│   │   │       └── page.tsx
+│   │   ├── my-plan/
+│   │   │   └── page.tsx
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   ├── loading.tsx
+│   │   ├── not-found.tsx
+│   │   └── page.tsx
+│   │
+│   ├── components/
+│   │   ├── Footer.tsx
+│   │   ├── Hero.tsx
+│   │   ├── Navbar.tsx
+│   │   ├── WorkoutActions.tsx
+│   │   ├── WorkoutCard.tsx
+│   │   └── WorkoutLibrary.tsx
+│   │
+│   ├── context/
+│   │   └── WorkoutContext.tsx
+│   │
+│   └── lib/
+│       └── api.ts
+│
+└── README.md
